@@ -73,7 +73,7 @@ app.get('/fetchDealers', async (req, res) => {
 app.get('/fetchDealers/:state', async (req, res) => {
     //Write your code here
     try {
-        const documents = await Dealerships.find({dealership: req.params.state});
+        const documents = await Dealerships.find({state: req.params.state});
         res.json(documents);
     }
     catch(error){
@@ -85,7 +85,7 @@ app.get('/fetchDealers/:state', async (req, res) => {
 app.get('/fetchDealer/:id', async (req, res) => {
     //Write your code here
     try {
-        const documents = await Dealerships.find({dealership: req.params.id})
+        const documents = await Dealerships.find({id: req.params.id})
         res.json(documents);
     }
     catch(error){
