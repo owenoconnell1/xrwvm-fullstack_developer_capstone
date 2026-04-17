@@ -30,24 +30,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    # noqa: E501 
-    'https://oconneop-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-    # noqa: E501
-    'https://oconneop-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    # noqa: E501
-    'https://oconneop-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    # noqa: E501
-    'https://oconneop-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+    'https://oconneop-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai', # noqa: E501
+    'https://oconneop-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', # noqa: E501
+    'https://oconneop-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', # noqa: E501
+    'https://oconneop-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', # noqa: E501
     ]
 CSRF_TRUSTED_ORIGINS = [
-    # noqa: E501
-    'https://oconneop-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
-    # noqa: E501
-    'https://oconneop-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    # noqa: E501
-    'https://oconneop-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    # noqa: E501
-    'https://oconneop-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
+    'https://oconneop-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai', # noqa: E501
+    'https://oconneop-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', # noqa: E501
+    'https://oconneop-3030.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', # noqa: E501
+    'https://oconneop-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai', # noqa: E501
     ]
 
 REST_FRAMEWORK = {
@@ -113,8 +105,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        # noqa: E501
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', # noqa: E501
     },
     {
         'NAME':
