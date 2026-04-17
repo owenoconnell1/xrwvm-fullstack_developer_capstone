@@ -34,13 +34,13 @@ def post_review(data_dict):
         print(response.json())
         return response.json()
     except Exception as error:
+        print(f"Unexpected {error=}, {type(error)=}")
         print("Network exception occured")
 
 
 def get_request(endpoint, **kwargs):
     params = ""
-    if(kwargs):
-
+    if (kwargs):
         for key, value in kwargs.items():
             params = params+key+"="+value+"&"
 
@@ -53,4 +53,5 @@ def get_request(endpoint, **kwargs):
         return response.json()
     except Exception as error:
         # If any error occurs
+        print(f"Unexpected {error=}, {type(error)=}")
         print("Network exception occurred")
